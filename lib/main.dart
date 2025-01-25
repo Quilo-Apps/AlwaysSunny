@@ -192,6 +192,11 @@ class _SunnyDaysScreenState extends State<SunnyDaysScreen> {
             sunnyScore.isEmpty ? 'Score will appear here' : 'Sunny Score: $sunnyScore',
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
+          const SizedBox(height: 50),
+          const Text(
+            'Advanced Details',
+            style: TextStyle(color: Colors.white, fontSize: 12),
+          ),
         ],
       ),
     );

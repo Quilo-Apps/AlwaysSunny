@@ -1,5 +1,5 @@
 {
-   "checksum": "3941563c1c38af47bef85a6cc4125eff",
+   "checksum": "e603eb6b075a3b77694adde9a91a5b7c",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -11,33 +11,24 @@
                "power_bookmark_meta": ""
             },
             "name": "Brightspace UWO",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://westernu.brightspace.com/d2l/login",
-            "visit_count": 0
+            "url": "https://westernu.brightspace.com/d2l/login"
          }, {
             "date_added": "13302129579757085",
             "date_last_used": "13366856144944211",
             "guid": "460bb585-fcaa-472a-8fc5-ca4aae42d597",
             "id": "10",
             "name": "Student Center",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://student.uwo.ca/psp/heprdweb/?cmd=login&languageCd=ENG&",
-            "visit_count": 0
+            "url": "https://student.uwo.ca/psp/heprdweb/?cmd=login&languageCd=ENG&"
          }, {
             "date_added": "13307756416338846",
             "date_last_used": "13315190924745796",
             "guid": "a7a72814-f325-4b6a-ac46-6c0948f0a124",
             "id": "11",
             "name": "WileyPLUS - WileyPLUS",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://www.wileyplus.com/",
-            "visit_count": 0
+            "url": "https://www.wileyplus.com/"
          }, {
             "date_added": "13340148748740214",
             "date_last_used": "13353457116702697",
@@ -47,11 +38,8 @@
                "power_bookmark_meta": ""
             },
             "name": "Δ-Y and Y-Δ Conversions | DC Network Analysis | Electronics Textbook",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/delta-y-and-y-conversions/",
-            "visit_count": 0
+            "url": "https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/delta-y-and-y-conversions/"
          }, {
             "date_added": "13350855039906227",
             "date_last_used": "0",
@@ -61,55 +49,40 @@
                "power_bookmark_meta": ""
             },
             "name": "NMM276 Text",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://quizlet.com/explanations/textbook-solutions/advanced-engineering-mathematics-7th-edition-9781284206241/chapter-9-exercises-24-18ab1ba2-3cff-4340-8c2c-894b19e60a36",
-            "visit_count": 0
+            "url": "https://quizlet.com/explanations/textbook-solutions/advanced-engineering-mathematics-7th-edition-9781284206241/chapter-9-exercises-24-18ab1ba2-3cff-4340-8c2c-894b19e60a36"
          }, {
             "date_added": "13355022273743720",
             "date_last_used": "13372294476116188",
             "guid": "67718e4e-44a7-4e0e-8ef5-36e600907149",
             "id": "14",
             "name": "WinnersWinClassDiagram: Lucidchart",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://lucid.app/lucidchart/0fd7d34e-ecac-46ea-a6c2-53483e662546/edit?beaconFlowId=46340F307A0CBD5F&invitationId=inv_eebc5727-f2a5-4705-9bba-a2b893109f89&page=0_0#",
-            "visit_count": 1
+            "url": "https://lucid.app/lucidchart/0fd7d34e-ecac-46ea-a6c2-53483e662546/edit?beaconFlowId=46340F307A0CBD5F&invitationId=inv_eebc5727-f2a5-4705-9bba-a2b893109f89&page=0_0#"
          }, {
             "date_added": "13365799103266567",
             "date_last_used": "13365993593909152",
             "guid": "5be7ccf5-0021-4eca-bd19-f0d862f2b234",
             "id": "15",
             "name": "Pops",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://funko.fandom.com/wiki/Pop!_Animation",
-            "visit_count": 0
+            "url": "https://funko.fandom.com/wiki/Pop!_Animation"
          }, {
             "date_added": "13302129541873677",
             "date_last_used": "0",
             "guid": "5c62bdbc-d735-4036-93b2-6b9094f61fc8",
             "id": "16",
             "name": "OWL",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://owl.uwo.ca/portal/site/~ccurran7",
-            "visit_count": 0
+            "url": "https://owl.uwo.ca/portal/site/~ccurran7"
          }, {
             "date_added": "13366851825537417",
             "date_last_used": "0",
             "guid": "113e9390-323d-43cf-aaba-93f32fe1f8bb",
             "id": "17",
             "name": "3330",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://drive.google.com/drive/folders/1RN26PxRzNQQxph1iweE8WFVmxnfEJzUP",
-            "visit_count": 0
+            "url": "https://drive.google.com/drive/folders/1RN26PxRzNQQxph1iweE8WFVmxnfEJzUP"
          }, {
             "date_added": "13373661605704217",
             "date_last_used": "0",
@@ -119,11 +92,8 @@
                "power_bookmark_meta": ""
             },
             "name": "3332",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://drive.google.com/drive/folders/1Rw6ZXvMiOcFzGa4A2Ro58w7Tcice2zWy",
-            "visit_count": 1
+            "url": "https://drive.google.com/drive/folders/1Rw6ZXvMiOcFzGa4A2Ro58w7Tcice2zWy"
          }, {
             "date_added": "13373931422425439",
             "date_last_used": "0",
@@ -133,11 +103,8 @@
                "power_bookmark_meta": ""
             },
             "name": "ECE3",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://drive.google.com/drive/folders/1_KHtcJCRDMhrDR4-Qqg8l1s-h_MBXpqf",
-            "visit_count": 1
+            "url": "https://drive.google.com/drive/folders/1_KHtcJCRDMhrDR4-Qqg8l1s-h_MBXpqf"
          }, {
             "date_added": "13373931434424667",
             "date_last_used": "0",
@@ -147,52 +114,39 @@
                "power_bookmark_meta": ""
             },
             "name": "Ece3.1",
-            "show_icon": false,
-            "source": "sync",
             "type": "url",
-            "url": "https://drive.google.com/drive/folders/1CoPtlC32rBpaJIdvc7YYSJmLDDcQWhEz",
-            "visit_count": 1
+            "url": "https://drive.google.com/drive/folders/1CoPtlC32rBpaJIdvc7YYSJmLDDcQWhEz"
          }, {
             "date_added": "13381089644858703",
             "date_last_used": "0",
             "guid": "a38d3499-152d-470d-acb7-113b00ad0a5a",
             "id": "8",
             "name": "Lenovo Support",
-            "show_icon": false,
-            "source": "oem_preload",
             "type": "url",
-            "url": "https://support.lenovo.com/",
-            "visit_count": 0
+            "url": "https://support.lenovo.com/"
          }, {
             "date_added": "13381089644858466",
             "date_last_used": "0",
             "guid": "6c6d145d-8005-4858-a5b6-8bb231b9d513",
             "id": "7",
             "name": "Lenovo",
-            "show_icon": false,
-            "source": "oem_preload",
             "type": "url",
-            "url": "https://www.lenovo.com/",
-            "visit_count": 0
+            "url": "https://www.lenovo.com/"
          }, {
             "date_added": "13381089644858020",
             "date_last_used": "0",
             "guid": "7ae2661d-0400-4d9b-a5fb-fd9b4a4696cf",
             "id": "6",
             "name": "McAfee",
-            "show_icon": false,
-            "source": "oem_preload",
             "type": "url",
-            "url": "https://www.mcafee.com/consumer/v/browserfav/lenovo.html",
-            "visit_count": 0
+            "url": "https://www.mcafee.com/consumer/v/browserfav/lenovo.html"
          } ],
          "date_added": "13381089644474399",
          "date_last_used": "0",
          "date_modified": "13381089644858703",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
-         "name": "Favorites bar",
-         "source": "unknown",
+         "name": "Bookmarks bar",
          "type": "folder"
       },
       "other": {
@@ -202,8 +156,7 @@
          "date_modified": "0",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
-         "name": "Other favorites",
-         "source": "unknown",
+         "name": "Other bookmarks",
          "type": "folder"
       },
       "synced": {
@@ -213,11 +166,9 @@
          "date_modified": "0",
          "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
          "id": "3",
-         "name": "Mobile favorites",
-         "source": "unknown",
+         "name": "Mobile bookmarks",
          "type": "folder"
       }
    },
-   "sync_metadata": "CkEKHgiIgQISCGF3XVaUAQAAKg4QABgBIBgoBTAAOABAABIAKhhUUDFKRDlmdklNK0F4cDFjeVIwT2t3PT1IA6AGDBKuAQgUEqkBChxzenVUeTBuZ29zNjd5dUJpTmEvSXZmek5VSXc9EiQxZGJlYjQyOS0yZTY2LTQ1ZjQtYmY0Zi1lMjliYjBiZDllYzYYACACKAIwkpmIs8UyOKip4d2qMkCh+IezxTJKHDEvM0RncXp1WDZObUVIVS9xWU8zNmJzVWhubz1aICIe//5ON201anNTVDR2Ulk3eWxZd1hPWFFkTlFvSzg9ZfqR3tvCPgJgBRKuAQgREqkBChxIdE50YXJ2QnNXUGtWZUU0bnlJbFlwZSs1NEE9EiQxMTNlOTM5MC0zMjNkLTQzY2YtYWFiYS05M2YzMmZlMWY4YmIYACACKAIwlJmIs8UyOMSh+K2QMkCf+IezxTJKHHdvZ1BOYmlXV09wZEZhRWloWHFPaFhSanAwYz1aICIe//Z5N0s5WVVGSEpNamNSMFVNVTlTaDZ0b09sbHc9ZfqR3tvCPgJgBRKtAQgPEqgBChx5Q1FKRVpiRjV6b2V5bzJJU0gxQzBuY21uYlk9EiQ1YmU3Y2NmNS0wMDIxLTRlY2EtYmQxOS1mMGQ4NjJmMmIyMzQYACACKAIwk5mIs8UyOPyX+7eMMkCe+IezxTJKHFFPS25XUTUyVG95aFE2N3hFRWdYTjFZd1lYOD1aHyIdTlAwZ3N0NEZlTkRHVGlyMHRwSkFXVmpuMTNUOD1l5b9eGMI+AmAFEqwBCA0SpwEKHERVS3FRZnhybnI5UG9RMk5mVitHMzlrd1FWbz0SJDJlZTQ4NTA5LWNjNWUtNGVjZS05MWQzLTY3YWRhNDc3MTI4YhgAIAIoAjCPmYizxTI49YyL4tQxQJ34h7PFMkocQ1IrVi8vZ0ZNY3JDZFVyOHQ2LzYxd2hJbDdvPVoeIhxMWXRkd1VjUmJ1STJXZTNMLzRic3EzSVg5amc9Zcop54TCPgJgBRKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiRmYmFkMTllZS1iMTAyLTU1OWUtYjBhOS1lNDhhMjYzOTQwNDIYACAAKAAwgdvcisUyONHzpJ+fMEDR86SfnzBKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAASrAEICxKnAQocaEFQOUhtbTR5NnFsN3FFTG9DeHdURDZWZUZBPRIkYTdhNzI4MTQtZjMyNS00YjZhLWFjNDYtNmMwOTQ4ZjBhMTI0GAAgAigCMJaZiLPFMjit4YabtDBAm/iHs8UyShw4N0x5U3dmOFJmUWcrREYwdGtVMWZrWnJXWlk9Wh4iHDcyNHlxbnNPWEN0NEtKU3FDUVk5K2NIN0NjVT1lX5A/8MI+AmAFEqwBCAoSpwEKHHlSMWFwMGtmK1pKS2RlMGw0cWRkTDNiTUhoRT0SJDQ2MGJiNTg1LWZjYWEtNDcyYS04ZmM1LWNhNGFhZTQyZDU5NxgAIAIoAjCVmYizxTI4rfL7n58wQJv4h7PFMkoceEI5WUt6TWlxci9rVE5ocldnQXhKZGlZRVVRPVoeIhw2TXZQUUV2NSt6K1JPUXRYOWVEZFRhUmVXQjQ9ZaonHRPCPgJgBRKsAQgQEqcBChxSMHllVmV3MGNqOTBlWTI4YXl0eGg3bjZtVFU9EiQ1YzYyYmRiYy1kNzM1LTQwMzYtOTNiMi02YjkwOTRmNjFmYzgYACACKAIwjZmIs8UyOIzL+Z+fMECe+IezxTJKHHl4amYrNUF6RDgvbGNUWmpSQ0VLN1J0bDlpZz1aHiIcT01Gbmg4VFRUUC9GZGlxS3BFL2s1MGlIVjlrPWWwg8rgwj4CYAUSrgEIExKpAQocMmxndGhHZnA5MXRuZFA2OVRXUW5qVFBGYldZPRIkMWJlODkzMzItODM3Ny00OGRjLWFlMGItMWM3NTljMzQ2ZTNiGAAgAigCMI6ZiLPFMjjGzeDdqjJAoPiHs8UyShxRczVmUEtuNlBpUUFGWWdKZ3dmMUZpTzhLS1E9WiAiHv/9Z0dvazFUaHlXcEpmcmE3aDQzNjY0Zm9sTytNPWX6kd7bwj4CYAUSrAEIDBKnAQocMzlxTGRtS0EyaWtNcktFUGxyWW5DdWRRMk44PRIkOTBhNjY5MjctMGI1MC00YTYyLWJmM2QtMGVmODJiNjc5OGQ0GAAgAigCMIyZiLPFMjj+gPbwrDFAnPiHs8UyShxNRldwc3J0RTZQK0NlNWNFd1kvdnlTNW1FRzg9Wh4iHEN5VG1vY0FKWTFPT0RGcTJIUzExWE5vRnFYdz1lKQM0esI+AmAFEq0BCA4SqAEKHDJBUFlpODFOOGptL1pGMmJTYmdSQWNBYkZmUT0SJDY3NzE4ZTRlLTQ0YTctNGUwZS04ZWY1LTM2ZTYwMDkwNzE0ORgAIAIoAjCQmYizxTI4yN6VpeQxQJ34h7PFMkocYkVsZnpDRGpPWDNrMzNGVnFrcElLMkE5V21rPVofIh1OTVVodUZiTldQNUVCL2dQM0VWWU1PeHk4QUUwPWXATkHewj4CYAUSrQEICRKoAQocc1dPZk82OG43ZDRtZkdiaEJZTkgwc1hKdTdrPRIkYzU3YzVlZjQtMDBhYy00MDVjLWE0YTAtNjRkYjE0NzMxYmFiGAAgAigCMIuZiLPFMji69YHs9zFAm/iHs8UyShwyS2lCUTJCcU5OTDRiMzNkNXMwcnNLcE5SdE09Wh8iHSdlcGhocHY5NUUrT0JNbFcrSEF0bDJkek5YUEE9ZbCDyuDCPgJgBRKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQ2ZjEyZTA5Yy03NzY0LTU4NjgtYTdiYy1iMGIwOGE3NDY2YTAYACAAKAAw/9rcisUyOPz0pJ+fMED89KSfnzBKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAASrgEIEhKpAQocQmpZbGk3WEs5ZUVyTEw2TFRjREFlaVBwbUowPRIkNWI2YTVkYTktNDdlZC00YmE3LWE1MDYtZTllMjc0YjY4ZTY5GAAgAigCMJGZiLPFMjj0p4zdqTJAoPiHs8UyShxWYkNCSDlaUG80ZHRhaDh0ejg4eHBlcUFjSms9WiAiHv/7aG9aYUh0V08xRHFRM000N3RlSVgwSE9hZ09JPWX6kd7bwj4CYAUSjgEIAhKJAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkOGU4ZmY3YTctM2U3MC01ZmU3LWJmOWMtZGYwNDc0Y2JlMTgwGAAgACgAMIDb3IrFMjjw86SfnzBA8POkn58wShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAAMI+AmAAMAA4AA==",
    "version": 1
 }

@@ -38,6 +38,7 @@ class _SunnyDaysScreenState extends State<SunnyDaysScreen> {
   DateTime? startDate;
   DateTime? endDate;
   String city = '';
+  String province = '';
   String sunnyScore = ''; // To hold the sunny score value
 
   // Function to fetch the sunny score from the backend
@@ -53,6 +54,7 @@ class _SunnyDaysScreenState extends State<SunnyDaysScreen> {
       headers: {"Content-Type": "application/json"},
       body: json.encode({
         'city': city,
+        'province': province,
         'start_date': startDate!.toString().split(' ')[0], // Convert to YYYY-MM-DD
         'end_date': endDate!.toString().split(' ')[0], // Convert to YYYY-MM-DD
       }),
@@ -84,20 +86,46 @@ class _SunnyDaysScreenState extends State<SunnyDaysScreen> {
             size: 100,
           ),
           const SizedBox(height: 20),
-          TextField(
-            onChanged: (value) {
-              setState(() {
-                city = value;  // Update city when text changes
-              });
-            },
-            decoration: const InputDecoration(
-              hintText: 'Enter city name',
-              prefixIcon: Icon(Icons.search),
-              border: OutlineInputBorder(),
-              filled: true,
-              fillColor: Color.fromARGB(255, 200, 200, 200),
+          
+          Row(
+            children: [
+              // TextField for province
+              Expanded(
+              child: TextField(
+                onChanged: (value) {
+                  setState(() {
+                    city = value; // Update province when text changes
+                  });
+                },
+                decoration: const InputDecoration(
+                  hintText: 'Enter city name',
+                  prefixIcon: Icon(Icons.search),
+                  border: OutlineInputBorder(),
+                  filled: true,
+                  fillColor: Color.fromARGB(255, 200, 200, 200),
+                ),
+              ),
+            ),
+            const SizedBox(width: 1), // Add spacing between the TextFields
+            // TextField for city
+            Expanded(
+            child: TextField(
+              onChanged: (value) {
+                setState(() {
+                  province = value; // Update city when text changes
+                });
+              },
+              decoration: const InputDecoration(
+                hintText: 'Enter province name',
+                
+                border: OutlineInputBorder(),
+                filled: true,
+                fillColor: Color.fromARGB(255, 200, 200, 200),
+              ),
             ),
           ),
+        ],
+      ),
           const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,

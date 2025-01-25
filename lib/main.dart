@@ -116,7 +116,7 @@ class _SunnyDaysScreenState extends State<SunnyDaysScreen> {
                 });
               },
               decoration: const InputDecoration(
-                hintText: 'Enter province name',
+                hintText: 'Enter province/state name',
                 
                 border: OutlineInputBorder(),
                 filled: true,

@@ -1,5 +1,5 @@
 name: always_sunny
-description: "A new Flutter project."
+description: "Always Sunny App is a revolutionary app that takes weather and travel to the next level. Giving users a score based on how sunny anywhere in the world is."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -47,7 +47,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
-
+  flutter_launcher_icons: ^0.9.2
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -89,3 +89,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flutter_icons:
+  android: "launder_icon"
+  ios: true
+  image_path: "assets/sun.png"

@@ -33,37 +33,34 @@ class SunnyDaysScreen extends StatefulWidget {
 }
 
 class _SunnyDaysScreenState extends State<SunnyDaysScreen> {
-  List<String> filters = ['Filter 1', 'Filter 2', 'Filter 3'];
-  List<bool> filterSelections = [false, false, false];
   DateTime? startDate;
   DateTime? endDate;
   String city = '';
   String province = '';
   String sunnyScore = ''; // To hold the sunny score value
 
-  // Function to fetch the sunny score from the backend
+  // Updated function to fetch the sunny score from Flask backend
   Future<void> getSunnyScore() async {
-  // Ensure city, startDate, and endDate are not null or empty
-    if (city.isEmpty || startDate == null || endDate == null) {
+    if (city.isEmpty || province.isEmpty || startDate == null || endDate == null) {
       return;
     }
 
-    final url = Uri.parse('http://127.0.0.1:5000/get_sunny_score'); // Your backend URL
+    final url = Uri.parse('http://127.0.0.1:5000/get_sunny_score');
     final response = await http.post(
       url,
       headers: {"Content-Type": "application/json"},
       body: json.encode({
         'city': city,
         'province': province,
-        'start_date': startDate!.toString().split(' ')[0], // Convert to YYYY-MM-DD
-        'end_date': endDate!.toString().split(' ')[0], // Convert to YYYY-MM-DD
+        'start_date': startDate!.toString().split(' ')[0],
+        'end_date': endDate!.toString().split(' ')[0],
       }),
     );
 
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       setState(() {
-        sunnyScore = data['sunny_score'].toString(); // Extract sunny_score from the response
+        sunnyScore = data['sunny_score'].toString();
       });
     } else {
       setState(() {

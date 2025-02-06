@@ -39,6 +39,13 @@ class _SunnyDaysScreenState extends State<SunnyDaysScreen> {
   String province = '';
   String sunnyScore = ''; // To hold the sunny score value
 
+  //new variables for advanced details
+  bool showAdvanced = false;
+  String clearSkies = "";
+  String windSpeed = "";
+  String rainScore = "";
+  String snowScore = "";
+
   // Updated function to fetch the sunny score from Flask backend
   Future<void> getSunnyScore() async {
     if (city.isEmpty || province.isEmpty || startDate == null || endDate == null) {
@@ -61,6 +68,11 @@ class _SunnyDaysScreenState extends State<SunnyDaysScreen> {
       final data = json.decode(response.body);
       setState(() {
         sunnyScore = data['sunny_score'].toString();
+        clearSkies = data['clear_skies'].toString();
+        windSpeed = data['wind_speed'].toString();
+        rainScore = data['rain_amount'].toString();
+        snowScore = data['snow_amount'].toString();
+
       });
     } else {
       setState(() {
@@ -190,10 +202,44 @@ class _SunnyDaysScreenState extends State<SunnyDaysScreen> {
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           const SizedBox(height: 50),
-          const Text(
-            'Advanced Details',
-            style: TextStyle(color: Colors.white, fontSize: 12),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.white, width: 2), // White border around checkbox
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: Checkbox(
+                  value: showAdvanced,
+                  onChanged: (bool? value) {
+                    setState(() {
+                      showAdvanced = value ?? false;
+                    });
+                  },
+                ),
+              ),
+              const Text("  Advanced Details", style: TextStyle(color: Colors.white, fontSize: 16)),
+            ],
           ),
+          if (showAdvanced)
+            Container(
+              padding: const EdgeInsets.all(10),
+              margin: const EdgeInsets.only(top: 10),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Mean Clear Skies: $clearSkies%", style: TextStyle(color: Colors.white)),
+                  Text("Mean Wind Speed: $windSpeed km/h", style: TextStyle(color: Colors.white)),
+                  Text("Mean Rain: $rainScore mm", style: TextStyle(color: Colors.white)),
+                  Text("Mean Snow: $snowScore mm", style: TextStyle(color: Colors.white)),
+                ],
+              ),
+            ),  
         ],
       ),
     );

@@ -19,7 +19,7 @@ retry_session = retry(cache_session, retries=5, backoff_factor=0.2)
 
 # Function to get latitude and longitude from city and province/state
 def get_coordinates(city, province):
-    print(f"Getting coordinates for {city}, {province}")
+    
     geocoding_api_key = "6d24a705c3134c52be93f7492280662f"  # Replace if needed
     geocoding_url = "https://api.opencagedata.com/geocode/v1/json"
     params = {
@@ -27,23 +27,21 @@ def get_coordinates(city, province):
         "key": geocoding_api_key,
     }
     response = requests.get(geocoding_url, params=params)
-    print('API Response COde: ', response.status_code)
-    print("API Response JSON ", response.text)
+    
 
     response.raise_for_status()
     data = response.json()
 
     if data["results"]:
         location = data["results"][0]["geometry"]
-        print("Latitude: ", location["lat"])
-        print("Longitude: ", location["lng"])
+        
         return location["lat"], location["lng"]
     else:
         raise ValueError("Could not find location. Please check the city and province/state names.")
 
 # Function to fetch weather data
 def fetch_weather_data(latitude, longitude, start_date, end_date):
-    print("Fetching weather... ")
+    
     url = "https://api.open-meteo.com/v1/forecast"
     params = {
         "latitude": latitude,
@@ -56,8 +54,6 @@ def fetch_weather_data(latitude, longitude, start_date, end_date):
     }
     try:
         response = retry_session.get(url, params=params).json()
-        print("Response got... ")
-        print(response)
         return response
     except Exception as e:
         print(f"Error fetching weather data: {e}")
@@ -69,19 +65,19 @@ def calculate_always_sunny_score(clear_skies, wind_speed, rain_quantity, snow_qu
     score -= (wind_speed if wind_speed > 3 else 0)  # Wind speed (subtract only if > 3 km/h)
     score -= rain_quantity * 1.5  # Rain quantity (mm) adjustment
     score -= snow_quantity * 1.5  # Snow quantity (mm) adjustment
-    print('got score: ', score)
+    
     return max(score, 0)  # Ensure score is not negative
 
 # Function to process weather data
 def process_weather_data(weather_data):
     hourly_data = pd.DataFrame(weather_data['hourly'])
-    print('got hourly_data... ')
+    
     hourly_data['time'] = pd.to_datetime(hourly_data['time'])
     daily_data = pd.DataFrame(weather_data['daily'])
-    print('got daily_data')
+    
     daily_data['time'] = pd.to_datetime(daily_data['time'])
 
-    print('about to do daily summary')
+    
     # Calculate daily summaries from hourly data
     daily_summary = hourly_data.groupby(hourly_data['time'].dt.date).apply(lambda x: pd.Series({
         'Clear skies % of day': 100 - x['cloudcover'].mean(),
@@ -89,16 +85,14 @@ def process_weather_data(weather_data):
         'Rain Quantity': x['precipitation'].sum(),  # Total rain quantity
         'Snow Quantity': x['snowfall'].sum(),  # Total snow quantity
     }))
-    print('finished daily summary')
+    
     # Merge summaries
     daily_summary = daily_summary.reset_index()
     daily_summary['time'] = pd.to_datetime(daily_summary['time'])
 
-    print('caculating always sunny score')
+    
 
-    print('Daily_SUmmary content before applying scoer')
-    print(daily_summary.head())
-    print(daily_summary.dtypes)
+    
 
     # Calculate Always Sunny Score and its components
     daily_summary['Always Sunny Score'] = daily_summary.apply(
@@ -109,9 +103,14 @@ def process_weather_data(weather_data):
             row['Snow Quantity']
         ), axis=1
     )
-    print(daily_summary)
-    print('finished always sunny score')
-    return daily_summary['Always Sunny Score'].mean()
+    
+
+    daily_summary_mean = [daily_summary['Clear skies % of day'].mean(), 
+                          daily_summary['Avg wind speed'].mean(),
+                          daily_summary['Rain Quantity'].mean(),
+                          daily_summary['Snow Quantity'].mean(),
+                          daily_summary['Always Sunny Score'].mean()]
+    return daily_summary_mean
 
 
 
@@ -119,7 +118,7 @@ def process_weather_data(weather_data):
 @app.route('/get_sunny_score', methods=['POST'])
 def get_sunny_score():
     data = request.get_json()
-    print('got data...')
+    
     city = data.get('city')
     province = data.get('province')
     start_date = data.get('start_date')
@@ -132,23 +131,32 @@ def get_sunny_score():
     try:
         
         latitude, longitude = get_coordinates(city, province)
-        print("GOT LAT AND LONG")
+        
         weather_data = fetch_weather_data(latitude, longitude, start_date, end_date)
-        print("GOT WEATHER DATA")
+        
 
         if weather_data:
-            print("IN IF STATEMENT")
+            
             processed_data = process_weather_data(weather_data)
-            print("GOT PROCESSED DATA")
-            print(processed_data)
-            processed_data = round(processed_data, 3)
+            
+            
+            sunny_score = round(processed_data[-1], 3)
+            
+            clear_skies = round(processed_data[0], 3)
+            wind_speed = round(processed_data[1], 3)
+            rain_amount = round(processed_data[2], 3)
+            snow_amount = round(processed_data[3], 3)
             return jsonify({
                 "city": city,
                 "province": province,
                 "latitude": latitude,
                 "longitude": longitude,
                 "weather_data": weather_data,
-                "sunny_score": processed_data
+                "sunny_score": sunny_score,
+                "clear_skies": clear_skies,
+                "wind_speed": wind_speed,
+                "rain_amount": rain_amount,
+                "snow_amount": snow_amount
             })
         else:
             return jsonify({"error": "Could not fetch weather data"}), 500

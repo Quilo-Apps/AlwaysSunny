@@ -1,9 +1,7 @@
-2025/02/01-18:03:23.924 9724 Reusing MANIFEST C:\Users\caden\AppData\Local\Temp\flutter_tools.ded8dd04\flutter_tools_chrome_device.f5c8f49e\Default\shared_proto_db/MANIFEST-000001
-2025/02/01-18:03:23.926 9724 Recovering log #10
-2025/02/01-18:03:23.928 9724 Reusing old log C:\Users\caden\AppData\Local\Temp\flutter_tools.ded8dd04\flutter_tools_chrome_device.f5c8f49e\Default\shared_proto_db/000010.log 
-2025/02/01-18:03:23.929 9724 Delete type=0 #3
-2025/02/01-18:03:23.929 9724 Delete type=0 #4
-2025/02/01-18:03:23.929 9724 Delete type=0 #7
-2025/02/01-18:03:41.168 9db8 Level-0 table #14: started
-2025/02/01-18:03:41.176 9db8 Level-0 table #14: 135466 bytes OK
-2025/02/01-18:03:41.179 9db8 Delete type=0 #10
+2025/02/01-18:21:15.881 f54 Reusing MANIFEST C:\Users\caden\AppData\Local\Temp\flutter_tools.d59e191\flutter_tools_chrome_device.f8c10930\Default\shared_proto_db/MANIFEST-000001
+2025/02/01-18:21:15.883 f54 Recovering log #13
+2025/02/01-18:21:15.884 f54 Reusing old log C:\Users\caden\AppData\Local\Temp\flutter_tools.d59e191\flutter_tools_chrome_device.f8c10930\Default\shared_proto_db/000013.log 
+2025/02/01-18:21:15.884 f54 Delete type=0 #3
+2025/02/01-18:21:15.885 f54 Delete type=0 #4
+2025/02/01-18:21:15.885 f54 Delete type=0 #7
+2025/02/01-18:21:15.885 f54 Delete type=0 #10
